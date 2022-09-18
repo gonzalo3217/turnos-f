@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="flagrancia.js"></script>
+    <style>
+    body {background-color: rgb(150, 196, 233);}
+    h1 {color: rgb(254, 255, 255);}
+    h3 {color: rgb(250, 253, 253);}
+    h4 {color: rgb(250, 253, 253);}
+</style>
+    <title>Aplicacion de Turnos</title>
+</head>
+<body>
+    <h1 id="demo">Esta es la Aplicacion de Turnos de Flagrancia</h1>
+    <h3> Encuentra el turno en Fiscalias de Flagrancia</h3> 
+
+    
+    <form>
+        <fieldset style="width: 300px " >
+            <legend>Datos  a ingresar </legend>
+            <label for="dia">Escribe el dia </label>
+            <input type="text" id="dia"  maxlength="2" size="2" />
+            <br />
+
+            <label for="mes">Escribe el mes </label>
+            <input type="text" id="mes"  maxlength="2" size="2" />
+            <br />
+
+            <label for="mes">Escribe la zona </label>
+            <input type="text" id="zona"  maxlength="1" size="1" />
+            <br />
+              </fieldset>
+          
+      <!---  <input type="submit" value="Enviar" />-->
+      <p>Haga click en el año:</p>
+      <button type="button" onclick="A2018()">2018 </button> 
+      <button type="button" onclick="A2019()">2019 </button>
+      <button type="button" onclick="A2020()">2020 </button>
+      <button type="button" onclick="A2021()">2021 </button>
+      <button type="button" onclick="A2022()">2022 </button>
+    </form>
+    <h2 id="demo"></h2>
+</body>
+</html>

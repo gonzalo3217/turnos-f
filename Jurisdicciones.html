@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Jurisdicciones.js"></script>
+    <style>
+    body {background-color: rgb(150, 196, 233);}
+    h1 {color: rgb(254, 255, 255);}
+    h3 {color: rgb(250, 253, 253);}
+    h4 {color: rgb(250, 253, 253);}
+    label {color: rgb(250, 253, 253);}
+    p {color: rgb(250, 253, 253);}
+
+</style>
+    <title>Jurisdicciones y Fiscalias</title>
+</head>
+<body>
+    
+    <h3  id="demo"> Indica el nro de Dpto y Seccional Policial</h3> 
+    <br/>
+    <h3> 1.Artigas 2.Canelones 3.Cerro Largo<br>
+        4.Colonia 5.Maldonado 6. Rio Negro <br>
+        7.Rocha 8.San Jose 9. Soriano <br>
+        0.Tacuarembó
+
+    </h3>
+  <form>
+        <fieldset style="width: 300px " >
+            <label for="dto">Nro de Departamento</label>
+            <input type="text" id="dto"  maxlength="2" size="2" /> <br/>
+             <label for="secc">Nro de Seccional</label>
+            <input type="text" id="secc"  maxlength="2" size="2" />
+              </fieldset>
+              
+     
+      <button type="button" onclick="Jurisdicciones()">BUSCAR </button>        
+      
+    </form>
+
+    
+</body>
+</html>

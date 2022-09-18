@@ -1,0 +1,44 @@
+[debug] [2022-08-16T03:03:09.075Z] ----------------------------------------------------------------------
+[debug] [2022-08-16T03:03:09.077Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\equipo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-08-16T03:03:09.078Z] CLI Version:   11.7.0
+[debug] [2022-08-16T03:03:09.078Z] Platform:      win32
+[debug] [2022-08-16T03:03:09.079Z] Node Version:  v16.16.0
+[debug] [2022-08-16T03:03:09.080Z] Time:          Tue Aug 16 2022 00:03:09 GMT-0300 (hora estándar de Uruguay)
+[debug] [2022-08-16T03:03:09.080Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-16T03:03:09.174Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-16T03:03:09.175Z] > authorizing via signed-in user (drgarcialemes218@gmail.com)
+[debug] [2022-08-16T03:03:09.175Z] [iam] checking project apturnos for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-16T03:03:09.178Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/apturnos:testIamPermissions [none]
+[debug] [2022-08-16T03:03:09.179Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/apturnos:testIamPermissions x-goog-quota-user=projects/apturnos
+[debug] [2022-08-16T03:03:09.179Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/apturnos:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-16T03:03:10.232Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/apturnos:testIamPermissions 200
+[debug] [2022-08-16T03:03:10.232Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/apturnos:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-16T03:03:10.235Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/apturnos [none]
+[debug] [2022-08-16T03:03:11.343Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/apturnos 200
+[debug] [2022-08-16T03:03:11.344Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/apturnos {"projectId":"apturnos","projectNumber":"999761597439","displayName":"apturnos","name":"projects/apturnos","resources":{"hostingSite":"apturnos"},"state":"ACTIVE","etag":"1_9740c3aa-3df8-4c3a-8498-a9bbe1d55334"}
+[info] 
+[info] === Deploying to 'apturnos'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-08-16T03:03:11.355Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/apturnos [none]
+[debug] [2022-08-16T03:03:12.330Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/apturnos 200
+[debug] [2022-08-16T03:03:12.330Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/apturnos {"projectId":"apturnos","projectNumber":"999761597439","displayName":"apturnos","name":"projects/apturnos","resources":{"hostingSite":"apturnos"},"state":"ACTIVE","etag":"1_9740c3aa-3df8-4c3a-8498-a9bbe1d55334"}
+[debug] [2022-08-16T03:03:12.336Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/999761597439/sites/apturnos/versions [none]
+[debug] [2022-08-16T03:03:12.337Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/999761597439/sites/apturnos/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-08-16T03:03:13.575Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/999761597439/sites/apturnos/versions 500
+[debug] [2022-08-16T03:03:13.575Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/999761597439/sites/apturnos/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-08-16T03:03:13.583Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
